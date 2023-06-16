@@ -1,0 +1,559 @@
+{{> header}}
+{{> loader}}
+<main class="certificateRequestPage page v2">
+  <section class="pageSection section gridSplit">
+
+
+    <div class="sideNavWrap finAnim d1">
+      <div class="navWrap">
+        <ul class="navList">
+          <li class="navItem"><a href="#/" class="navLink closeBtn more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.222 20">
+                  <g id="Icon" transform="translate(1.11)">
+                    <rect id="Area" width="20" height="20" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+                      <line id="_12e1f04a-f4dd-4d65-b3c6-a786dfe57069" data-name="12e1f04a-f4dd-4d65-b3c6-a786dfe57069"
+                        x1="20" transform="translate(-1.289 5.279)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="_241af363-98f5-41c0-a69c-9f852b48c796" data-name="241af363-98f5-41c0-a69c-9f852b48c796"
+                        x1="20" transform="translate(-1.289 0.835)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="d3a79788-1214-45e9-9a80-a8881cc5722f" x1="20" transform="translate(-1.289 9.724)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'certificateRequest'  }}"
+              class="navLink more normalInverted_ v2 active">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="ddc55427-effd-4cb2-a6aa-0e5bcd710fd4"
+                        d="M13,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V9Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bfb920a1-24c1-4be1-99ec-baefb9b8729c" d="M13,2V9h7" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>طلبات الشهادات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'allRequests'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="_7ceca6d9-7818-4488-abd0-a89475ab127b" data-name="7ceca6d9-7818-4488-abd0-a89475ab127b"
+                        d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bca4acb2-e9e9-49bc-aed0-2a1bc03e3030" d="M14,2V8h6" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="ecc486f2-1c64-4ed3-ad04-1562b13ca1ad" x1="8" transform="translate(4.71 8.502)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="_24204a68-e1e4-4814-bb16-8f6e8cc7e0f5" data-name="24204a68-e1e4-4814-bb16-8f6e8cc7e0f5"
+                        x1="8" transform="translate(4.71 12.502)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="_8e974fd9-3149-45bb-af89-e41dc7c0c648" data-name="8e974fd9-3149-45bb-af89-e41dc7c0c648"
+                        d="M10,9H8" transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>كل الطلبات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'paymentHistory'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.759)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="f654c737-6619-4a49-b652-d4e6c2f40dcb"
+                        d="M14.4,3.6h1.8A1.8,1.8,0,0,1,18,5.4V18a1.8,1.8,0,0,1-1.8,1.8H5.4A1.8,1.8,0,0,1,3.6,18V5.4A1.8,1.8,0,0,1,5.4,3.6H7.2"
+                        transform="translate(-1.807 -1.809)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <rect id="e1829885-6702-45c4-8cc2-57a1ec3b9d6a" width="7.2" height="3.6" rx="1"
+                        transform="translate(5.393 -0.009)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <span>تاريخ الدفع</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'userDashboard'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.756)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="_8e8318b5-2ffb-40ae-9954-0ce283ce8bb2" data-name="8e8318b5-2ffb-40ae-9954-0ce283ce8bb2"
+                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2" transform="translate(-3.007 -3.006)" fill="none"
+                        stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <circle id="_64c9f6a0-8133-4bdd-a532-cfd4a0b71a30"
+                        data-name="64c9f6a0-8133-4bdd-a532-cfd4a0b71a30" cx="4" cy="4" r="4"
+                        transform="translate(4.993 -0.006)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>ملف تعريفي للمستخدم</span>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="mainContentWrap finAnim d2">
+      <div class="breadCrumb">
+        <ul class="crumbList">
+          <li class="crumbItem"><a href="#" class="crumbLink">شهادة الإقامة الضريبية للأغراض الضريبية المحلية</a>
+          </li>
+          <li class="crumbItem current">يخلق</li>
+        </ul>
+      </div>
+
+      <div class="requestInnerWrap pageWrap v2">
+        <div class="formBox finAnim d3">
+          <form class="form-v3">
+            <div class="contentWrap">
+              <div class="input_box">
+                <div class="input-field">
+                  <label for="typeofA">نوع مقدم الطلب</label>
+                  <select id="typeofA" data-select>
+                    <option>شخص طبيعي</option>
+                    <option>الشخص الاعتباري</option>
+                    <option>الحكومة القضائية</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="contentWrap">
+              <div class="input_box">
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="name">اسم صاحب الطلب</label>
+                    <span>الرجاء كتابة الاسم باللغة الإنجليزية</span>
+                  </div>
+                  <input id="name" type="text" placeholder="تم الاسترجاع من EmaraTax" readonly>
+                </div>
+
+                <div class="input-field">
+                  <label for="eIdNum">رقم الهوية الإماراتية</label>
+                  <input id="eIdNum" type="text" placeholder="تم الاسترجاع من EmaraTax" readonly>
+                </div>
+
+                <div class="input-field">
+                  <label for="eIdNumExp">تاريخ انتهاء الهوية الإماراتية</label>
+                  <input id="eIdNumExp" type="text" placeholder="تم الاسترجاع من EmaraTax" readonly>
+                </div>
+
+                <div class="input-field">
+                  <label for="nationality">جنسية مقدم الطلب</label>
+                  <select id="nationality" data-select>
+                    <option>الهند</option>
+                    <option>إسبانيا</option>
+                    <option>المغرب</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label for="passportNum">رقم جواز السفر</label>
+                  <input id="passportNum" type="text" placeholder="تم الاسترجاع من EmaraTax" readonly>
+                </div>
+
+
+                <div class="input-field">
+                  <label for="pExpiryDate">وقت نفاذ صلاحيه جواز السفر</label>
+                  <div class="wIcon">
+                    <input id="pExpiryDate" type="text" class="datepick-ar" placeholder="تم الاسترجاع من EmaraTax">
+                    <div class="iconBox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.233" height="16.213"
+                        viewBox="0 0 15.233 16.213">
+                        <g id="calendar" transform="translate(0.75 0.75)">
+                          <rect id="Rectangle_342" data-name="Rectangle 342" width="13.733" height="13.733" rx="2"
+                            transform="translate(0 0.981)" fill="none" stroke="#1e3a56" stroke-linecap="square"
+                            stroke-width="1.5"></rect>
+                          <line id="Line_162" data-name="Line 162" y2="2.943" transform="translate(10.79 0)" fill="none"
+                            stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"></line>
+                          <line id="Line_163" data-name="Line 163" y2="2.943" transform="translate(3.924 0)" fill="none"
+                            stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"></line>
+                          <line id="Line_164" data-name="Line 164" x2="13.733" transform="translate(0 6.866)"
+                            fill="none" stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round"
+                            stroke-width="1.5"></line>
+                        </g>
+                      </svg>
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="input-field">
+                  <label for="daysSpent">عدد الايام التي قضاها في الامارات</label>
+                  <select id="daysSpent" data-select>
+                    <option value="0">يختار</option>
+                    <option value="1">ما يعادل أو أكثر من 183 يومًا</option>
+                    <option value="2">أقل من 183 يومًا وتساوي أو تزيد عن 90 يومًا</option>
+                    <option value="3">أقل من 90 يومًا أو حالة أخرى</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label for="soi">مصدر الدخل</label>
+                  <select id="soi" data-select>
+                    <option value="0">يختار</option>
+                    <option>موظف</option>
+                    <option>العاملون لحسابهم الخاص</option>
+                    <option>دليل آخر على مزاولة الأعمال التجارية في الإمارات العربية المتحدة</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="soiattach">مصدر الدخل</label>
+                    <span>يجب أن يكون المرفق بصيغة pdf أو jpeg أو png وبحجم أقل من 1 ميغابايت</span>
+                  </div>
+                  <div class="wIcon">
+                    <div class="input_parent">
+                      <div class="input-row  att_row">
+                        <input type="file" class="form-control uploader" data-type="s_copy" data-mimes="pdf,jpg,jpeg"
+                          id="soiattach" name="soiattach" required="">
+                        <div class="choose">
+                          <span class="choose-file uploadFileName"></span>
+                          <div class="uploadPercentage"></div>
+                          <div class="choose-btn">
+                            {{!-- <small>[ jpeg,pdf Max 5Mb ]</small> --}}
+                          </div>
+                          <div class="icon_box">
+                            <img src="{{assets}}/images/paperclip.svg">
+                          </div>
+                          <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                          </div>
+                        </div>
+                        <input class="filename" type="hidden" id="s_copy_file" value="" name="s_copy_file[]"
+                          placeholder="">
+                        <input class="file_" type="hidden" id="file_" value="" name="file_[]" placeholder="">
+                        <input class="url_" type="hidden" id="url_" value="" name="url_[]" placeholder="">
+                        <input class="type_" type="hidden" id="type_" value="" name="type_[]" placeholder="">
+                        <input class="original_name" type="hidden" id="eid_copy_file_tmp" value=""
+                          name="eid_copy_file_tmp[]" placeholder="">
+                        <input class="original_name" type="hidden" id="s_copy_file_tmp" value=""
+                          name="s_copy_file_tmp[]" placeholder="">
+                        <span class="upload_requirements">
+                          <!--[jpeg,png,pdf,jpg] Max Size 2 MB -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="input-field">
+                  <label for="ppr">إثبات محل الإقامة الدائم</label>
+                  <select id="ppr" data-select>
+                    <option value="0">يختار</option>
+                    <option>عقد إيجار مصدق</option>
+                    <option>سند ملكية</option>
+                    <option>فواتير الخدمات التي تغطي الفترة المطلوبة</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="pprattach">إثبات محل الإقامة الدائم</label>
+                    <span>يجب أن يكون المرفق بصيغة pdf أو jpeg أو png وبحجم أقل من 1 ميغابايت</span>
+                  </div>
+                  <div class="wIcon">
+                    <div class="input_parent">
+                      <div class="input-row  att_row">
+                        <input type="file" class="form-control uploader" data-type="s_copy" data-mimes="pdf,jpg,jpeg"
+                          id="pprattach" name="pprattach" required="">
+                        <div class="choose">
+                          <div class="choose-file uploadFileName"></div>
+                          <div class="uploadPercentage"></div>
+                          <div class="choose-btn">
+                            {{!-- <small>[ jpeg,pdf Max 5Mb ]</small> --}}
+                          </div>
+                          <div class="icon_box">
+                            <img src="{{assets}}/images/paperclip.svg">
+                          </div>
+                          <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                          </div>
+                        </div>
+                        <input class="filename" type="hidden" id="s_copy_file" value="" name="s_copy_file[]"
+                          placeholder="">
+                        <input class="file_" type="hidden" id="file_" value="" name="file_[]" placeholder="">
+                        <input class="url_" type="hidden" id="url_" value="" name="url_[]" placeholder="">
+                        <input class="type_" type="hidden" id="type_" value="" name="type_[]" placeholder="">
+                        <input class="original_name" type="hidden" id="eid_copy_file_tmp" value=""
+                          name="eid_copy_file_tmp[]" placeholder="">
+                        <input class="original_name" type="hidden" id="s_copy_file_tmp" value=""
+                          name="s_copy_file_tmp[]" placeholder="">
+                        <span class="upload_requirements">
+                          <!--[jpeg,png,pdf,jpg] Max Size 2 MB -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="ppfattach">إثبات المصالح المالية والشخصية</label>
+                    <span>تحميل كشف حساب لمدة 6 أشهر على الأقل للسنة المطلوبة</span>
+                  </div>
+                  <div class="wIcon">
+                    <div class="input_parent">
+                      <div class="input-row  att_row">
+                        <input type="file" class="form-control uploader" data-type="s_copy" data-mimes="pdf,jpg,jpeg"
+                          id="ppfattach" name="ppfattach" required="">
+                        <div class="choose">
+                          <div class="choose-file uploadFileName"></div>
+                          <div class="uploadPercentage"></div>
+                          <div class="choose-btn">
+                            {{!-- <small>[ jpeg,pdf Max 5Mb ]</small> --}}
+                          </div>
+                          <div class="icon_box">
+                            <img src="{{assets}}/images/paperclip.svg">
+                          </div>
+                          <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                          </div>
+                        </div>
+                        <input class="filename" type="hidden" id="s_copy_file" value="" name="s_copy_file[]"
+                          placeholder="">
+                        <input class="file_" type="hidden" id="file_" value="" name="file_[]" placeholder="">
+                        <input class="url_" type="hidden" id="url_" value="" name="url_[]" placeholder="">
+                        <input class="type_" type="hidden" id="type_" value="" name="type_[]" placeholder="">
+                        <input class="original_name" type="hidden" id="eid_copy_file_tmp" value=""
+                          name="eid_copy_file_tmp[]" placeholder="">
+                        <input class="original_name" type="hidden" id="s_copy_file_tmp" value=""
+                          name="s_copy_file_tmp[]" placeholder="">
+                        <span class="upload_requirements">
+                          <!--[jpeg,png,pdf,jpg] Max Size 2 MB -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="residencyReport">تقرير الهجرة من الإقامة</label>
+                    <span>يجب أن يكون المرفق بصيغة pdf أو jpeg أو png وبحجم أقل من 1 ميغابايت</span>
+                  </div>
+                  <div class="wIcon">
+                    <div class="input_parent">
+                      <div class="input-row  att_row">
+                        <input type="file" class="form-control uploader" data-type="s_copy" data-mimes="pdf,jpg,jpeg"
+                          id="residencyReport" name="residencyReport" required="">
+                        <div class="choose">
+                          <div class="choose-file uploadFileName"></div>
+                          <div class="uploadPercentage"></div>
+                          <div class="choose-btn">
+                            {{!-- <small>[ jpeg,pdf Max 5Mb ]</small> --}}
+                          </div>
+                          <div class="icon_box">
+                            <img src="{{assets}}/images/paperclip.svg">
+                          </div>
+                          <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                          </div>
+                        </div>
+                        <input class="filename" type="hidden" id="s_copy_file" value="" name="s_copy_file[]"
+                          placeholder="">
+                        <input class="file_" type="hidden" id="file_" value="" name="file_[]" placeholder="">
+                        <input class="url_" type="hidden" id="url_" value="" name="url_[]" placeholder="">
+                        <input class="type_" type="hidden" id="type_" value="" name="type_[]" placeholder="">
+                        <input class="original_name" type="hidden" id="eid_copy_file_tmp" value=""
+                          name="eid_copy_file_tmp[]" placeholder="">
+                        <input class="original_name" type="hidden" id="s_copy_file_tmp" value=""
+                          name="s_copy_file_tmp[]" placeholder="">
+                        <span class="upload_requirements">
+                          <!--[jpeg,png,pdf,jpg] Max Size 2 MB -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-field">
+                  <label for="incomeTaxTRN">ضريبة الدخل الموثقة TRN</label>
+                  <input id="incomeTaxTRN" type="text" placeholder="" readonly>
+                </div>
+
+                <div class="input-field">
+                  <label for="residencyNumber">رقم الإقامة (رقم الملف)</label>
+                  <input id="residencyNumber" type="text" placeholder="" readonly>
+                </div>
+
+                <div class="input-field">
+                  <label for="vatTRN">TRN ضريبة القيمة المضافة</label>
+                  <input id="vatTRN" type="text" placeholder="" readonly>
+                </div>
+
+                <div class="input-field">
+                  <div class="infoBox">
+                    <label for="otherAttachments">مرفق آخر</label>
+                    <span>يجب أن يكون المرفق بصيغة pdf أو jpeg أو png وبحجم أقل من 1 ميغابايت</span>
+                  </div>
+
+                  <div class="wIcon">
+                    <div class="input_parent">
+                      <div class="input-row  att_row">
+                        <input type="file" class="form-control uploader" data-type="s_copy" data-mimes="pdf,jpg,jpeg"
+                          id="otherAttachments" name="otherAttachments" required="">
+                        <div class="choose">
+                          <div class="choose-file uploadFileName"></div>
+                          <div class="uploadPercentage"></div>
+                          <div class="choose-btn">
+                            {{!-- <small>[ jpeg,pdf Max 5Mb ]</small> --}}
+                          </div>
+                          <div class="icon_box">
+                            <img src="{{assets}}/images/paperclip.svg">
+                          </div>
+                          <div class="uploadProgressWrapper">
+                            <div class="uploadProgress"></div>
+                          </div>
+                        </div>
+                        <input class="filename" type="hidden" id="s_copy_file" value="" name="s_copy_file[]"
+                          placeholder="">
+                        <input class="file_" type="hidden" id="file_" value="" name="file_[]" placeholder="">
+                        <input class="url_" type="hidden" id="url_" value="" name="url_[]" placeholder="">
+                        <input class="type_" type="hidden" id="type_" value="" name="type_[]" placeholder="">
+                        <input class="original_name" type="hidden" id="eid_copy_file_tmp" value=""
+                          name="eid_copy_file_tmp[]" placeholder="">
+                        <input class="original_name" type="hidden" id="s_copy_file_tmp" value=""
+                          name="s_copy_file_tmp[]" placeholder="">
+                        <span class="upload_requirements">
+                          <!--[jpeg,png,pdf,jpg] Max Size 2 MB -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="input-field full_">
+                  <div class="inputWrap v2">
+                    <div class="input-field">
+                      <div class="infoBox">
+                        <label for="pCert">هل تريد شهادة مطبوعة؟</label>
+                        <span>(250 درهمًا إماراتيًا للنسخة)</span>
+                      </div>
+
+                    </div>
+
+                    <div class="input-field">
+                      <div class="radioWrap v2 ">
+                        <label>
+                          <input name="group3" type="radio" id="pCert">
+                          <span>نعم</span>
+                        </label>
+                        <label>
+                          <input name="group3" type="radio">
+                          <span>لا</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-field full_">
+                  <label for="otherComments">تعليقات أخرى</label>
+                  <textarea id="otherComments" class="materialize-textarea"></textarea>
+                </div>
+
+                <div class="input-field full_">
+                  <div class="radioWrap">
+                    <label>
+                      <input name="checkBox01" type="checkbox">
+                      <span>أنا أوافق على <a href="#tandc" class="link_" data-fancybox>البنود و الظروفs</a> من اتفاقية
+                        التجارة الحرة</span>
+                      <label class="error">يتطلب حقلا</label>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="input-field full_">
+                  <div class="radioWrap">
+                    <label>
+                      <input name="checkBox02" type="checkbox">
+                      <span>أنا مقيم ضريبي وفقًا للتشريعات الضريبية المعمول بها في دولة الإمارات العربية المتحدة.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="moreWrap finAnim d3">
+                <button type="submit" class="more lg_ outline">
+                  <span>يلغي</span>
+                </button>
+
+                <button type="submit" class="more lg_">
+                  <span>يُقدِّم</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<div id="tandc" class="popup popupBox md_box" style="display: none;">
+
+  <div class="sectionTitleSmall">
+    <h3>شروط وأحكام اتفاقية التجارة الحرة</h3>
+  </div>
+
+  <div class="tandcWrap">
+    <ul class="tandcList">
+      <li class="tandcItem">أوافق على دفع رسوم الطلب البالغة 50 درهمًا</li>
+      <li class="tandcItem">أوافق على دفع رسوم إصدار الشهادة وفقًا لهيكل الرسوم
+        (https://tax.gov.ae/ar/services/issuance.of.tax.residency.certificate.aspx)</li>
+      <li class="tandcItem">أشهد أن جميع المعلومات التي قدمتها صحيحة ودقيقة وكاملة ؛ وأنني قدمت جميع المعلومات أو
+        المستندات الداعمة التي تم طلبها أو التي قد تكون ذات صلة
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<script>
+  let btn = document.querySelector(".closeBtn")
+  let section = document.querySelector(".section")
+
+  btn.addEventListener("click", changeSize)
+
+  function changeSize() {
+    section.classList.toggle("active")
+  }
+</script>
+
+{{> script-page}}
+{{> footer}}

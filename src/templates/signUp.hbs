@@ -1,0 +1,135 @@
+{{> header}}
+{{> loader}}
+<main class="signupPage page">
+  <section class="pageSection">
+    <div class="container ">
+      <div class="signupWrap pageWrap v2">
+        <div class="contentBox finAnim">
+          <h1 class=" ">
+            <small>Sign Up</small>
+          </h1>
+        </div>
+
+        <div class="formBox finAnim d1">
+          <form class="form-v3" action="{{ menuLink 'dashboard' }}">
+            <div class="input_box">
+              <div class="input-field">
+                <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+                  data-valmsg-replace="true"><span id="loginModel_Username-error" class="">The Email Id field is
+                    required.</span></span>
+                <label for="emailid">Email Id</label>
+                <input id="emailid" type="email">
+              </div>
+
+              <div class="input-field">
+                <label for="name">First Name</label>
+                <input id="name" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="surname">Last Name</label>
+                <input id="surname" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="username">Username</label>
+                <input id="username" type="text">
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="code">Country Code</label>
+                  <input id="code" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="num">Mobile Number</label>
+                  <input id="num" type="text">
+                </div>
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="code-02">Country Code</label>
+                  <input id="code-02" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="num-02">Mobile Number</label>
+                  <input id="num-02" type="text">
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="address">Address 01</label>
+                <input id="address" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="pobox">P.O Box</label>
+                <input id="pobox" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="password">Password</label>
+                <input id="password" type="password">
+              </div>
+
+              <div class="input-field">
+                <label for="confirmpassword">Password</label>
+                <input id="confirmpassword" type="password">
+              </div>
+
+              <div class="input-field">
+                <label for="question">Security Question</label>
+                <input id="question" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="answer">Answer</label>
+                <input id="answer" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="hint">Hint</label>
+                <input id="hint" type="text">
+              </div>
+
+              <div class="input-field full_">
+                <div class="radioWrap">
+                  <label>
+                    <input name="group1" type="checkbox" />
+                    <span>I agree to the Terms & Conditions of the FTA</span>
+                    <label class="error">Required field</label>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </form>
+
+
+
+
+        </div>
+
+        <div class="moreWrap finAnim d2">
+          <button type="submit" class="more lg_ outline">
+            <span>Cancel</span>
+          </button>
+
+          <button type="submit" class="more lg_">
+            <span>Sign up</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> script-page}}
+{{> footer}}

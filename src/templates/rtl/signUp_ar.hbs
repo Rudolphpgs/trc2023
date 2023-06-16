@@ -1,0 +1,135 @@
+{{> header}}
+{{> loader}}
+<main class="signupPage page">
+  <section class="pageSection">
+    <div class="container ">
+      <div class="signupWrap pageWrap v2">
+        <div class="contentBox finAnim">
+          <h1 class=" ">
+            <small>اشتراك</small>
+          </h1>
+        </div>
+
+        <div class="formBox finAnim d1">
+          <form class="form-v3" action="{{ menuLink 'dashboard' }}">
+            <div class="input_box">
+              <div class="input-field">
+                <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+                  data-valmsg-replace="true"><span id="loginModel_Username-error" class="">مطلوب حقل معرف البريد
+                    الإلكتروني.</span></span>
+                <label for="emailid">عنوان الايميل</label>
+                <input id="emailid" type="email">
+              </div>
+
+              <div class="input-field">
+                <label for="name">الاسم الأول</label>
+                <input id="name" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="surname">اسم العائلة</label>
+                <input id="surname" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="username">اسم المستخدم</label>
+                <input id="username" type="text">
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="code">الرقم الدولي</label>
+                  <input id="code" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="num">رقم الهاتف المحمول</label>
+                  <input id="num" type="text">
+                </div>
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="code-02">الرقم الدولي</label>
+                  <input id="code-02" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="num-02">رقم الهاتف المحمول</label>
+                  <input id="num-02" type="text">
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="address">العنوان 01</label>
+                <input id="address" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="pobox">صندوق بريد</label>
+                <input id="pobox" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="password">كلمة المرور</label>
+                <input id="password" type="password">
+              </div>
+
+              <div class="input-field">
+                <label for="confirmpassword">كلمة المرور</label>
+                <input id="confirmpassword" type="password">
+              </div>
+
+              <div class="input-field">
+                <label for="question">.مسألة أمان</label>
+                <input id="question" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="answer">إجابة</label>
+                <input id="answer" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="hint">تَلمِيح</label>
+                <input id="hint" type="text">
+              </div>
+
+              <div class="input-field full_">
+                <div class="radioWrap">
+                  <label>
+                    <input name="group1" type="checkbox" />
+                    <span>أوافق على شروط وأحكام اتفاقية التجارة الحرة</span>
+                    <label class="error">يتطلب حقلا</label>
+                  </label>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </form>
+
+
+
+
+        </div>
+
+        <div class="moreWrap finAnim d2">
+          <button type="submit" class="more lg_ outline">
+            <span>يلغي</span>
+          </button>
+
+          <button type="submit" class="more lg_">
+            <span>اشتراك</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> script-page}}
+{{> footer}}

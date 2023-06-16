@@ -1,0 +1,1 @@
+{"version":3,"sources":["../main-rtl.css"],"names":[],"mappings":"AAAA,mBACE,gBAAkB,CAAE,AACpB,qBACE,gBAAkB,CAAE","file":"../main-rtl.css","sourcesContent":["html[dir=\"rtl\"] body {\n  text-align: right; }\n  html[dir=\"rtl\"] body * {\n    letter-spacing: 0; }\n"]}

@@ -1,0 +1,322 @@
+{{> header}}
+{{> loader}}
+<main class="certificateRequestPage page v2">
+  <section class="pageSection section gridSplit">
+
+    <div class="sideNavWrap finAnim d1">
+      <div class="navWrap">
+        <ul class="navList">
+          <li class="navItem"><a href="#/" class="navLink closeBtn more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.222 20">
+                  <g id="Icon" transform="translate(1.11)">
+                    <rect id="Area" width="20" height="20" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+                      <line id="_12e1f04a-f4dd-4d65-b3c6-a786dfe57069" data-name="12e1f04a-f4dd-4d65-b3c6-a786dfe57069"
+                        x1="20" transform="translate(-1.289 5.279)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="_241af363-98f5-41c0-a69c-9f852b48c796" data-name="241af363-98f5-41c0-a69c-9f852b48c796"
+                        x1="20" transform="translate(-1.289 0.835)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="d3a79788-1214-45e9-9a80-a8881cc5722f" x1="20" transform="translate(-1.289 9.724)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'certificateRequest'  }}"
+              class="navLink more normalInverted_ v2 active">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="ddc55427-effd-4cb2-a6aa-0e5bcd710fd4"
+                        d="M13,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V9Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bfb920a1-24c1-4be1-99ec-baefb9b8729c" d="M13,2V9h7" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>طلبات الشهادات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'allRequests'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="_7ceca6d9-7818-4488-abd0-a89475ab127b" data-name="7ceca6d9-7818-4488-abd0-a89475ab127b"
+                        d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bca4acb2-e9e9-49bc-aed0-2a1bc03e3030" d="M14,2V8h6" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="ecc486f2-1c64-4ed3-ad04-1562b13ca1ad" x1="8" transform="translate(4.71 8.502)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="_24204a68-e1e4-4814-bb16-8f6e8cc7e0f5" data-name="24204a68-e1e4-4814-bb16-8f6e8cc7e0f5"
+                        x1="8" transform="translate(4.71 12.502)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="_8e974fd9-3149-45bb-af89-e41dc7c0c648" data-name="8e974fd9-3149-45bb-af89-e41dc7c0c648"
+                        d="M10,9H8" transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>كل الطلبات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'paymentHistory'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.759)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="f654c737-6619-4a49-b652-d4e6c2f40dcb"
+                        d="M14.4,3.6h1.8A1.8,1.8,0,0,1,18,5.4V18a1.8,1.8,0,0,1-1.8,1.8H5.4A1.8,1.8,0,0,1,3.6,18V5.4A1.8,1.8,0,0,1,5.4,3.6H7.2"
+                        transform="translate(-1.807 -1.809)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <rect id="e1829885-6702-45c4-8cc2-57a1ec3b9d6a" width="7.2" height="3.6" rx="1"
+                        transform="translate(5.393 -0.009)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>تاريخ الدفع</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'userDashboard'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.756)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="_8e8318b5-2ffb-40ae-9954-0ce283ce8bb2" data-name="8e8318b5-2ffb-40ae-9954-0ce283ce8bb2"
+                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2" transform="translate(-3.007 -3.006)" fill="none"
+                        stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <circle id="_64c9f6a0-8133-4bdd-a532-cfd4a0b71a30"
+                        data-name="64c9f6a0-8133-4bdd-a532-cfd4a0b71a30" cx="4" cy="4" r="4"
+                        transform="translate(4.993 -0.006)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>ملف تعريفي للمستخدم</span>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="mainContentWrap finAnim d2">
+      <div class="breadCrumb">
+        <ul class="crumbList">
+          <li class="crumbItem current">كل الطلبات</li>
+        </ul>
+      </div>
+
+      <div class="tableWrap pageWrap v2">
+
+        <div class="filterBox finAnim d2">
+          <div class="toolBox">
+            <div class="textBox">
+              <span>إجمالي الطلبات:</span>
+              <span>6</span>
+            </div>
+
+            <div class="linkBox">
+              <a href="#" class="link_" data-fancybox>تصفية متقدم</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="formBox finAnim d3">
+          <form class="form-v3 ">
+            <div class="input_box input-table">
+              <div class="input-field">
+                <select data-select>
+                  <option>مسودة</option>
+                  <option>مسودة</option>
+                  <option>مسودة</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <select data-select>
+                  <option>موافقة</option>
+                  <option>مرفوض</option>
+
+                </select>
+              </div>
+
+              <div class="input-field">
+                <select data-select>
+                  <option>طلب الدفع</option>
+                  <option>طلب الدفع</option>
+                  <option>طلب الدفع</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <div class="wIcon">
+                  <input type="text" class="search" placeholder="يبحث">
+                  <div class="iconBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21.721" height="21.721" viewBox="0 0 21.721 21.721">
+                      <g id="Icon" transform="translate(0.636 0.636)">
+                        <rect id="Area" width="19.575" height="19.575" transform="translate(0.253 0.253)" fill="#fcfcfc"
+                          opacity="0" />
+                        <g id="Icon-2" data-name="Icon" transform="translate(0.253 0.253)">
+                          <circle id="_65ed7dce-0c74-4528-a0d0-305923088e0d"
+                            data-name="65ed7dce-0c74-4528-a0d0-305923088e0d" cx="8.7" cy="8.7" r="8.7"
+                            transform="translate(0)" fill="none" stroke="#a6a7a8" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.778" />
+                          <line id="_28620a18-d3f8-4804-9b40-2b06cd40699f"
+                            data-name="28620a18-d3f8-4804-9b40-2b06cd40699f" x1="4.731" y1="4.731"
+                            transform="translate(14.844 14.844)" fill="none" stroke="#a6a7a8" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.778" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="tableBox finAnim d3">
+          <table id="example" class="table" style="width:100%">
+            <thead>
+              <tr>
+                <th>لا.</th>
+                <th>رقم الطلب</th>
+                <th>قدم على</th>
+                <th>اسم الكيان</th>
+                <th>تاريخ التقديم</th>
+                <th>دولة</th>
+                <th>حالة الطلب</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>TRC-15173-2022</td>
+                <td>Commercial Activities Certificate </td>
+                <td>Planet Green Solutions</td>
+                <td>23-06-2022</td>
+                <td>United Arab Emirates</td>
+                <td>Draft</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<script>
+  let btn = document.querySelector(".closeBtn")
+  let section = document.querySelector(".section")
+
+  btn.addEventListener("click", changeSize)
+
+  function changeSize() {
+    section.classList.toggle("active")
+  }
+</script>
+
+
+
+
+
+{{> script-page}}
+{{> footer}}

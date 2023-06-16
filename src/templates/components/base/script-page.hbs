@@ -1,0 +1,64 @@
+<script src="{{assets}}/scripts/lib/modernizr.min.js" type='text/javascript'></script>
+<script src="{{assets}}/scripts/lib/jquery-3.4.1.min.js" type='text/javascript'></script>
+<script src="{{assets}}/scripts/lib/jquery-migrate-3.0.1.min.js" type='text/javascript'></script>
+<script src="{{assets}}/scripts/min/page_plugins.js" type='text/javascript'></script>
+<script src="{{assets}}/scripts/min/page.js" type='text/javascript'></script>
+
+<script>
+  $(function () {
+    $('[data-select]').selectric({ disableOnMobile: false, nativeOnMobile: false });
+  })
+
+  /* var formControl = {
+     fileUpload: function () {
+       var t = document.querySelectorAll('[data-p-fileupload');
+ 
+       if (t) {
+         t.forEach(function (e) {
+           var m = e.parentElement;
+           var s = m.querySelector('.uploadFileName');
+ 
+           e.onchange = function (el) {
+             s.innerText = el.target.value;
+           }
+         })
+       }
+     },
+ 
+     init: function () {
+       this.fileUpload();
+     }
+   }
+ 
+   formControl.init();
+ */
+
+
+  var loginSwiper = new Swiper(".loginSwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    spaceBetween: 20,
+
+
+  });
+
+  new dateDropper({
+    selector: '.datepick',
+    expandedOnly: true,
+    format: "dd-mm-y",
+    customClass: 'datePickStyle',
+    //overlay: true,
+    showArrowsOnHover: false,
+  });
+
+  new dateDropper({
+    selector: '.datepick-ar',
+    expandedOnly: true,
+    format: "dd-mm-y",
+    customClass: 'datePickStyle',
+    showArrowsOnHover: false,
+    lang: 'ar'
+  });
+
+</script>

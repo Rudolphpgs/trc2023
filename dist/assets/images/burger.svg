@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.222" height="20" viewBox="0 0 22.222 20">
+  <g id="Icon" transform="translate(1.11)">
+    <rect id="Area" width="20" height="20" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+      <line id="_12e1f04a-f4dd-4d65-b3c6-a786dfe57069" data-name="12e1f04a-f4dd-4d65-b3c6-a786dfe57069" x1="20" transform="translate(-1.289 5.279)" fill="none" stroke="#1e3a56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222"/>
+      <line id="_241af363-98f5-41c0-a69c-9f852b48c796" data-name="241af363-98f5-41c0-a69c-9f852b48c796" x1="20" transform="translate(-1.289 0.835)" fill="none" stroke="#1e3a56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222"/>
+      <line id="d3a79788-1214-45e9-9a80-a8881cc5722f" x1="20" transform="translate(-1.289 9.724)" fill="none" stroke="#1e3a56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222"/>
+    </g>
+  </g>
+</svg>

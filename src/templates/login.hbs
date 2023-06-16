@@ -1,0 +1,121 @@
+{{> header}}
+{{> loader}}
+<main class="loginPage page">
+  <section class="pageSection">
+    <div class="container">
+      <div class="loginWrap pageWrap">
+
+        <div class="contentBox finAnim">
+          <h1 class=" ">
+            <small>Welcome to</small>
+            Federal Tax Authority
+          </h1>
+          <div class="swiper loginSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="textBox  ">
+                  <p>Tax Residency Certificate: a certificate issued by the FTA upon request to enable applicants to
+                    benefit
+                    from Double Tax Avoidance Agreements (DTAA) on income signed by the UAE.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="textBox  ">
+                  <p>Tax Residency Certificate: a certificate issued by the FTA upon request to enable applicants to
+                    benefit
+                    from Double Tax Avoidance Agreements (DTAA) on income signed by the UAE.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+
+        <div class="formWrap finAnim d1">
+          {{!-- <form class="form-v3" action="{{ menuLink 'dashboard' }}">
+            <div class="input_box">
+              <div class="input-field full_">
+                <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+                  data-valmsg-replace="true"><span id="loginModel_Username-error" class="">The User name field is
+                    required.</span></span>
+                <label for="emailid">Username</label>
+                <input id="emailid" type="email">
+              </div>
+              <div class="input-field full_">
+                <label for="password">Password</label>
+                <input id="password" type="password">
+
+                <div class="linkBox">
+                  <div class="linkWrap">
+                    <a href="#" class="resetLink link_"><span>Forgot password?</span>
+                    </a>
+
+                    <a href="#" class="infoLink link_">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19.329" height="19.323"
+                          viewBox="0 0 19.329 19.323">
+                          <g id="Group_4813" data-name="Group 4813" transform="translate(605 -161.801)">
+                            <path id="Path_16516" data-name="Path 16516"
+                              d="M-605,172.065v-1.208c.011-.061.024-.122.034-.183.072-.465.111-.938.219-1.395a9.65,9.65,0,0,1,11.475-7.26,9.664,9.664,0,0,1,7.6,9.078,9.466,9.466,0,0,1-2.365,6.7,9.436,9.436,0,0,1-5.629,3.183c-.351.062-.707.1-1.061.147h-1.208a.81.81,0,0,0-.126-.03,9.323,9.323,0,0,1-4.584-1.566,9.519,9.519,0,0,1-4.2-6.384C-604.916,172.788-604.951,172.425-605,172.065Zm1.353-.617a8.316,8.316,0,0,0,8.3,8.324,8.314,8.314,0,0,0,8.32-8.29,8.313,8.313,0,0,0-8.3-8.333A8.315,8.315,0,0,0-603.647,171.448Z"
+                              fill="" />
+                            <path id="Path_16517" data-name="Path 16517"
+                              d="M-430.875,324.394c0,.767-.007,1.534,0,2.3a.569.569,0,0,1-.318.552,1.341,1.341,0,0,1-1.317.023.59.59,0,0,1-.343-.577q.012-2.31,0-4.62a.569.569,0,0,1,.381-.587,1.544,1.544,0,0,1,1.245.022.545.545,0,0,1,.35.548C-430.881,322.835-430.875,323.615-430.875,324.394Z"
+                              transform="translate(-163.471 -151.518)" fill="" />
+                            <path id="Path_16518" data-name="Path 16518"
+                              d="M-432.924,264.031a1.07,1.07,0,0,1-.839-.359.806.806,0,0,1,.005-1.111,1.128,1.128,0,0,1,1.6-.018.773.773,0,0,1,.194.834.976.976,0,0,1-.815.642A1.288,1.288,0,0,1-432.924,264.031Z"
+                              transform="translate(-162.394 -95.353)" fill="" />
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                  <a href="#" class="accountLink link_"><span>Don't have an account?</span></a>
+                </div>
+              </div>
+              <div class="input-field full_">
+                <div class="moreWrap">
+                  <button type="submit" class="more lg_">
+                    <span>Login</span>
+                  </button>
+
+                  <button type="submit" class="more lg_ outline">
+                    <span>Cancel</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form> --}}
+
+          <div class="contentBox">
+            <div class="imgBox">
+              <img src="{{assets}}/images/partnerimg.svg" class="" alt="" width="490" height="118">
+            </div>
+
+            <div class="textBox sm_ textCenter">
+              <p>Please use your EmaraTax's credentials to login to the TRC Portal. If you are an existing user, please
+                create your account on EmaratTax using the same email address that was used to login to the
+                TRC Portal.</p>
+            </div>
+
+            <div class="moreWrap alCenter">
+              <button type="submit" class="more lg_">
+                <span>Login</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="svgBox finAnim d1">
+          <img src="{{assets}}/images/logoLg_icon.svg" class="" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+{{> script-page}}
+{{> footer}}

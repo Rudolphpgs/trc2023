@@ -1,0 +1,404 @@
+{{> header}}
+{{> loader}}
+<main class="certificateRequestPage page v2">
+  <section class="pageSection section gridSplit">
+
+    <div class="sideNavWrap finAnim d1">
+      <div class="navWrap">
+        <ul class="navList">
+          <li class="navItem"><a href="#/" class="navLink closeBtn more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.222 20">
+                  <g id="Icon" transform="translate(1.11)">
+                    <rect id="Area" width="20" height="20" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+                      <line id="_12e1f04a-f4dd-4d65-b3c6-a786dfe57069" data-name="12e1f04a-f4dd-4d65-b3c6-a786dfe57069"
+                        x1="20" transform="translate(-1.289 5.279)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="_241af363-98f5-41c0-a69c-9f852b48c796" data-name="241af363-98f5-41c0-a69c-9f852b48c796"
+                        x1="20" transform="translate(-1.289 0.835)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="d3a79788-1214-45e9-9a80-a8881cc5722f" x1="20" transform="translate(-1.289 9.724)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'certificateRequest'  }}"
+              class="navLink more normalInverted_ v2 active">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="ddc55427-effd-4cb2-a6aa-0e5bcd710fd4"
+                        d="M13,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V9Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bfb920a1-24c1-4be1-99ec-baefb9b8729c" d="M13,2V9h7" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>طلبات الشهادات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'allRequests'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="_7ceca6d9-7818-4488-abd0-a89475ab127b" data-name="7ceca6d9-7818-4488-abd0-a89475ab127b"
+                        d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bca4acb2-e9e9-49bc-aed0-2a1bc03e3030" d="M14,2V8h6" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="ecc486f2-1c64-4ed3-ad04-1562b13ca1ad" x1="8" transform="translate(4.71 8.502)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="_24204a68-e1e4-4814-bb16-8f6e8cc7e0f5" data-name="24204a68-e1e4-4814-bb16-8f6e8cc7e0f5"
+                        x1="8" transform="translate(4.71 12.502)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="_8e974fd9-3149-45bb-af89-e41dc7c0c648" data-name="8e974fd9-3149-45bb-af89-e41dc7c0c648"
+                        d="M10,9H8" transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>كل الطلبات</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'paymentHistory'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.759)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="f654c737-6619-4a49-b652-d4e6c2f40dcb"
+                        d="M14.4,3.6h1.8A1.8,1.8,0,0,1,18,5.4V18a1.8,1.8,0,0,1-1.8,1.8H5.4A1.8,1.8,0,0,1,3.6,18V5.4A1.8,1.8,0,0,1,5.4,3.6H7.2"
+                        transform="translate(-1.807 -1.809)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <rect id="e1829885-6702-45c4-8cc2-57a1ec3b9d6a" width="7.2" height="3.6" rx="1"
+                        transform="translate(5.393 -0.009)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>تاريخ الدفع</span>
+            </a></li>
+          <li class="navItem"><a href="{{ menuLink 'userDashboard'  }}" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.756)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="_8e8318b5-2ffb-40ae-9954-0ce283ce8bb2" data-name="8e8318b5-2ffb-40ae-9954-0ce283ce8bb2"
+                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2" transform="translate(-3.007 -3.006)" fill="none"
+                        stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <circle id="_64c9f6a0-8133-4bdd-a532-cfd4a0b71a30"
+                        data-name="64c9f6a0-8133-4bdd-a532-cfd4a0b71a30" cx="4" cy="4" r="4"
+                        transform="translate(4.993 -0.006)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>ملف تعريفي للمستخدم</span>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="mainContentWrap finAnim d2">
+      <div class="breadCrumb">
+        <ul class="crumbList">
+          <li class="crumbItem"><a href="#" class="crumbLink">شهادة الإقامة الضرائب</a></li>
+          <li class="crumbItem current">يخلق</li>
+        </ul>
+      </div>
+
+
+      <div class="certificateRequestWrap pageWrap v2">
+        <div class="formBox finAnim d3">
+          <form class="form-v3">
+            <div class="input_box">
+              <div class="input-field">
+                <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+                  data-valmsg-replace="true"><span id="loginModel_Username-error" class="">مطلوب هذا
+                    المجال.</span></span>
+                <label for="typeofC">نوع الشهادة</label>
+                <input id="typeofC" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="typeofA">نوع مقدم الطلب</label>
+                <input id="typeofA" type="text">
+              </div>
+
+              <div class="input-field">
+                <label for="coc">البلد الذي تم تقديم الشهادة له</label>
+                <select id="coc" data-select>
+                  <option>الهند</option>
+                  <option>إسبانيا</option>
+                  <option>موسكو</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="sDateFyear">تاريخ بدء السنة المالية المطلوبة</label>
+                <div class="wIcon">
+                  <input id="sDateFyear" type="text" class="datepicker">
+                  <div class="iconBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.233" height="16.213" viewBox="0 0 15.233 16.213">
+                      <g id="calendar" transform="translate(0.75 0.75)">
+                        <rect id="Rectangle_342" data-name="Rectangle 342" width="13.733" height="13.733" rx="2"
+                          transform="translate(0 0.981)" fill="none" stroke="#1e3a56" stroke-linecap="square"
+                          stroke-width="1.5" />
+                        <line id="Line_162" data-name="Line 162" y2="2.943" transform="translate(10.79 0)" fill="none"
+                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
+                        <line id="Line_163" data-name="Line 163" y2="2.943" transform="translate(3.924 0)" fill="none"
+                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
+                        <line id="Line_164" data-name="Line 164" x2="13.733" transform="translate(0 6.866)" fill="none"
+                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
+                      </g>
+                    </svg>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="input-field full_">
+                <div class="inputWrap v2">
+                  <div class="input-field">
+                    <label for="cLang">اللغة المفضلة للشهادة</label>
+                  </div>
+
+                  <div class="input-field">
+                    <div class="radioWrap v2 ">
+                      <label>
+                        <input name="group1" type="radio" id="cLang">
+                        <span>عربي</span>
+                      </label>
+                      <label>
+                        <input name="group1" type="radio">
+                        <span>إنجليزي</span>
+                        <label class="error">يتطلب حقلا</label>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="input-field">
+                <label for="name">اسم صاحب الطلب</label>
+                <input id="name" type="text" placeholder="Please write the name in English">
+              </div>
+
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="eIdNum">رقم الهوية الإماراتية</label>
+                  <input id="eIdNum" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="eId">يرجى تحميل هوية الإمارات</label>
+                  <input id="eId" type="text">
+                </div>
+              </div>
+
+              <div class="input-field">
+
+                <label for="eIdNumEd">تاريخ انتهاء الهوية الإماراتية</label>
+
+                <div class="wIcon">
+                  <div class="placeholder_">
+                    <input id="eIdNumEd" type="file" data-p-fileupload>
+                    <span></span>
+                  </div>
+                  <div class="iconBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.717" height="17.617" viewBox="0 0 16.717 17.617">
+                      <path id="paperclip"
+                        d="M17.27,8.977,10.052,16.2A4.716,4.716,0,1,1,3.383,9.527L10.6,2.309a3.144,3.144,0,1,1,4.446,4.446L7.821,13.973A1.572,1.572,0,1,1,5.6,11.75l6.669-6.661"
+                        transform="translate(-1.402 -0.561)" fill="none" stroke="#1e3a56" stroke-linecap="square"
+                        stroke-width="1.2" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="input-field">
+                <label for="nationality">جنسية مقدم الطلب</label>
+                <input id="nationality" type="text">
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="passportNum">رقم جواز السفر</label>
+                  <input id="passportNum" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="passport">يرجى تحميل نسخة من جواز السفر</label>
+                  <input id="passport" type="text">
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="pNumEd">وقت نفاذ صلاحيه جواز السفر</label>
+                <input id="pNumEd" type="text">
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="residencyNum">رقم الإقامة (رقم الملف) *</label>
+                  <input id="residencyNum" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="residency">يرجى تحميل نسخة الإقامة</label>
+                  <input id="residency" type="text">
+                </div>
+              </div>
+
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="sourceIncome">مصدر الدخل</label>
+                  <input id="sourceIncome" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="upload">الرجاء تحميل</label>
+                  <input id="upload" type="text">
+                </div>
+              </div>
+
+
+              <div class="input-field">
+                <label for="bankStatement">كشف حساب مصرفي رسمي</label>
+                <input id="bankStatement" type="text" placeholder="Upload atleast 6 months statement for required year">
+              </div>
+
+              <div class="input-field">
+                <label for="residencyReport">تقرير الهجرة من الإقامة</label>
+                <input id="residencyReport" type="text"
+                  placeholder="Exit & Entry Report Covering for the Period Requested">
+              </div>
+
+              <div class="inputWrap">
+                <div class="input-field">
+                  <label for="supportingDocs">وثيقة مساعدة</label>
+                  <input id="supportingDocs" type="text">
+                </div>
+
+                <div class="input-field">
+                  <label for="upload-02">الرجاء تحميل</label>
+                  <input id="upload-02" type="text">
+                </div>
+              </div>
+
+
+              <div class="input-field full_">
+                <div class="inputWrap v2">
+                  <div class="input-field">
+                    <label for="sFormat">هل تتطلب الدولة التي تتقدم لها تنسيقًا خاصًا؟</label>
+                  </div>
+
+                  <div class="input-field">
+                    <div class="radioWrap v2 ">
+                      <label>
+                        <input name="group2" type="radio" id="sFormat">
+                        <span>نعم</span>
+                      </label>
+                      <label>
+                        <input name="group2" type="radio">
+                        <span>لا</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="otherAttachments">مرفق آخر</label>
+                <input id="otherAttachments" type="text">
+              </div>
+
+              <div class="input-field full_">
+                <div class="inputWrap v2">
+                  <div class="input-field">
+                    <label for="pCert">هل تريد شهادة مطبوعة؟</label>
+                  </div>
+
+                  <div class="input-field">
+                    <div class="radioWrap v2 ">
+                      <label>
+                        <input name="group3" type="radio" id="pCert">
+                        <span>نعم</span>
+                      </label>
+                      <label>
+                        <input name="group3" type="radio">
+                        <span>لا</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label for="otherComments">تعليقات أخرى</label>
+                <textarea id="otherComments" class="materialize-textarea"></textarea>
+              </div>
+
+              <div class="input-field full_">
+                <div class="radioWrap">
+                  <label>
+                    <input name="group4" type="checkbox" />
+                    <span>أوافق على شروط وأحكام اتفاقية التجارة الحرة</span>
+                    <label class="error">يتطلب حقلا</label>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="moreWrap finAnim d3">
+          <button type="submit" class="more lg_ outline">
+            <span>يلغي</span>
+          </button>
+
+          <button type="submit" class="more lg_">
+            <span>يُقدِّم</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<script>
+  let btn = document.querySelector(".closeBtn")
+  let section = document.querySelector(".section")
+
+  btn.addEventListener("click", changeSize)
+
+  function changeSize() {
+    section.classList.toggle("active")
+  }
+</script>
+
+{{> script-page}}
+{{> footer}}

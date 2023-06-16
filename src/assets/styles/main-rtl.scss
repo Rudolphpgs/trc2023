@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "variables";
+
+html[dir="rtl"] body {
+  text-align: right;
+  * {
+    letter-spacing: 0;
+  }
+}
