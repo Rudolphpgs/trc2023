@@ -907,8 +907,6 @@
       el: ".swiper-pagination",
     },
     spaceBetween: 20,
-
-
   });
 
   new dateDropper({
@@ -928,6 +926,38 @@
     showArrowsOnHover: false,
     lang: 'ar'
   });
+
+  $('.tabList ul.tabs li span').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('.tabList ul.tabs li span').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  })
+
+  $("#example-basic").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "fade",
+    transitionEffectSpeed: 400,
+    autoFocus: true,
+    onInit: function (event, currentIndex) {
+      console.log($(this), currentIndex)
+      $('.actions ul li:nth-child(1)').after('<li aria-hidden="false" aria-disabled="false"><a href="#save" role="menuitem">Save as draft</a></li>');
+      $('.actions ul li:nth-child(2)').before('<li aria-hidden="false" aria-disabled="false"><a href="#cancel" role="menuitem">Cancel</a></li>');
+      $('.steps ul li:nth-child(1)').append('Applicant Information');
+      $('.steps ul li:nth-child(2)').append('Request Information');
+      $('.steps ul li:nth-child(3)').append('Delivery Information');
+      $('.steps ul li:nth-child(4)').append('Review');
+    }
+  });
+
+
+
+
+
 
 </script><footer>
 

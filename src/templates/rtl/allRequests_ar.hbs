@@ -120,52 +120,51 @@
         </ul>
       </div>
 
+
       <div class="tableWrap pageWrap v2">
 
         <div class="filterBox finAnim d2">
           <div class="toolBox">
             <div class="textBox">
               <span>إجمالي الطلبات:</span>
-              <span>6</span>
+              <span>07</span>
             </div>
 
-            <div class="linkBox">
-              <a href="#" class="link_" data-fancybox>تصفية متقدم</a>
-            </div>
+            {{!-- <div class="linkBox">
+              <button class="link_" data-fancybox>Advanced Filter</button>
+            </div> --}}
           </div>
         </div>
-
 
         <div class="formBox finAnim d3">
           <form class="form-v3 ">
             <div class="input_box input-table">
               <div class="input-field">
                 <select data-select>
-                  <option>مسودة</option>
-                  <option>مسودة</option>
-                  <option>مسودة</option>
+                  <option>نوع الشهادة </option>
+                  <option>نوع الشهادة </option>
+                  <option>نوع الشهادة </option>
                 </select>
               </div>
 
               <div class="input-field">
                 <select data-select>
-                  <option>موافقة</option>
-                  <option>مرفوض</option>
-
+                  <option>نوع مقدم الطلب</option>
+                  <option>نوع مقدم الطلب</option>
                 </select>
               </div>
 
               <div class="input-field">
                 <select data-select>
-                  <option>طلب الدفع</option>
-                  <option>طلب الدفع</option>
-                  <option>طلب الدفع</option>
+                  <option>حالة الطلب</option>
+                  <option>حالة الطلب</option>
+                  <option>حالة الطلب</option>
                 </select>
               </div>
 
               <div class="input-field">
                 <div class="wIcon">
-                  <input type="text" class="search" placeholder="يبحث">
+                  <input type="text" class="search" placeholder="البحث عن طريق رقم الطلب">
                   <div class="iconBox">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21.721" height="21.721" viewBox="0 0 21.721 21.721">
                       <g id="Icon" transform="translate(0.636 0.636)">
@@ -194,103 +193,100 @@
             <thead>
               <tr>
                 <th>لا.</th>
-                <th>رقم الطلب</th>
-                <th>قدم على</th>
-                <th>اسم الكيان</th>
-                <th>تاريخ التقديم</th>
-                <th>دولة</th>
+                <th>رقم التطبيق</th>
+                <th>تاريخ</th>
+                <th>نوع مقدم الطلب </th>
+                <th>نوع الشهادة</th>
                 <th>حالة الطلب</th>
+                <th>فعل</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص طبيعي</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightBlue">في مراجعة</button></td>
+                <td></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>02</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>وكيل الضرائب</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightGold">انتظار الدفع</button></td>
+                <td><button class="more tableBtn colorOutlineGold">ادفع الآن</button></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>03</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص قانوني</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightGold returned">عاد
+                    <div class="iconBox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14.414" height="14.414"
+                        viewBox="0 0 14.414 14.414">
+                        <g id="Icon" transform="translate(0.75 0.75)">
+                          <rect id="Area" width="12" height="12" transform="translate(0.457 0.457)" fill="#fcfcfc"
+                            opacity="0" />
+                          <g id="Icon-2" data-name="Icon" transform="translate(0 0)">
+                            <path id="_37c8ddfe-bcc4-4ec6-96eb-25cee8977211"
+                              data-name="37c8ddfe-bcc4-4ec6-96eb-25cee8977211"
+                              d="M16.247,11.943a1.435,1.435,0,0,1-1.435,1.435H6.2l-2.87,2.87V4.768A1.435,1.435,0,0,1,4.768,3.333H14.812a1.435,1.435,0,0,1,1.435,1.435Z"
+                              transform="translate(-3.333 -3.333)" fill="none" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="1.5" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button></td>
+                <td><button class="more tableBtn colorOutlineGold">إعادة التقديم</button></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>04</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص طبيعي</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightGreen">مطبوعة</button></td>
+                <td><button class="more tableBtn colorOutlineGold">تحميل الشهادة</button></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>05</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص طبيعي</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightGrey">مغلق</button></td>
+                <td><button class="more tableBtn colorOutlineGold">تحميل الشهادة</button></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>06</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص طبيعي</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightGrey">مغلق</button></td>
+                <td><button class="more tableBtn colorOutlineGold">تحميل الشهادة</button></td>
               </tr>
 
               <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
-              </tr>
-
-              <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
-              </tr>
-
-              <tr>
-                <td>01</td>
-                <td>TRC-15173-2022</td>
-                <td>Commercial Activities Certificate </td>
-                <td>Planet Green Solutions</td>
-                <td>23-06-2022</td>
-                <td>United Arab Emirates</td>
-                <td>Draft</td>
+                <td>08</td>
+                <td>TRC-15173</td>
+                <td>23-06-2022 </td>
+                <td>شخص طبيعي</td>
+                <td>شهادة محلية</td>
+                <td><button class="more tableBtn colorLightRed">مرفوض</button></td>
+                <td></td>
               </tr>
             </tbody>
           </table>

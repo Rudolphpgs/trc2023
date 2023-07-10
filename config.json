@@ -22,7 +22,8 @@
         "src/assets/scripts/vendor/js.cookie.min.js",
         "src/assets/scripts/vendor/jquery.dataTables.min.js",
         "src/assets/scripts/vendor/datedropper-javascript.js",
-        "src/assets/scripts/vendor/datedropper-javascript-lang-AR.js"
+        "src/assets/scripts/vendor/datedropper-javascript-lang-AR.js",
+        "src/assets/scripts/vendor/jquery.steps.min.js"
     ]
 } 
   

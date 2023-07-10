@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Federal Tax Authority</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preload" href="assets/images/logo.svg" as="image">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/styles/page.css?1">
+    <style>
+        .loader {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999999;
+            background: #FFF;
+            margin: auto;
+            -webkit-transition: all .2s .1s ease-in-out;
+            -o-transition: all .2s .1s ease-in-out;
+            transition: all .2s .1s ease-in-out;
+            /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);*/
+        }
+    
+        .loader .in_loader {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 100%;
+            -webkit-transition: all .8s ease-in-out;
+            -o-transition: all .8s ease-in-out;
+            transition: all .8s ease-in-out
+        }
+    
+        .is-loaded .loader {
+            /*  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);*/
+            opacity: 0;
+    
+        }
+    
+        .loader .loader-img {
+            margin: 0;
+            text-align: center;
+            position: relative;
+            /*-webkit-animation: logoclipZoom 2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite alternate;
+            animation: logoclipZoom 2s linear infinite alternate;*/
+        }
+    
+        .loader .loader-img svg,
+        .loader .loader-img img {
+            animation: logoclipZoom 2s linear infinite alternate;
+        }
+    
+    
+        @-webkit-keyframes logoclipZoom {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+    
+            to {
+                -webkit-transform: scale(.8);
+                transform: scale(.8);
+            }
+        }
+    
+        @keyframes logoclipZoom {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+    
+            to {
+                -webkit-transform: scale(.8);
+                transform: scale(.8);
+            }
+        }
+    
+        .loader .loader-img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            -webkit-transition: all 1.2s ease-in-out;
+            -o-transition: all 1.2s ease-in-out;
+            transition: all 1.2s ease-in-out
+        }
+    
+        .loader .loader-img svg,
+        .loader .loader-img img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .loadScale .loader .loader-img {
+            transform: scale(2);
+            opacity: 0;
+            filter: blur(10px);
+        }
+    
+        @media only screen and (max-width: 767px) {
+    
+            .loader .loader-img svg,
+            .loader .loader-img img {
+                max-width: 33vw;
+            }
+        }
+    
+        .is-loaded .loader .loader-img svg,
+        .is-loaded .loader .loader-img img {
+            animation-play-state: paused;
+        }
+    
+        .is-loaded .loader {
+            pointer-events: none
+        }
+    </style></head>
+
+<body class="inner__page __noRequests">
+    <header id="header">
+      <div class="navbar ">
+        <div class="logoBox">
+          <a class="navbar-brand " href="login.html" title="logo" aria-label="logo">
+            <img src="assets/images/logo2.svg" class="lg_ " alt="">
+          </a>
+        </div>
+        <div class="rightBox">
+          <div class="lBox">
+            <ul class="sMenu">
+              <li class="smallMr burger_li no_hide">
+                <button class="menu_trigger" data-traget="master_menu" aria-label="Burger Menu">
+                  <svg width="100%" viewBox="0 0 100 100">
+                    <path
+                      style="transition:stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1)"
+                      class="index-module--line--WO7RZ index-module--line1--xbUp"
+                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                    </path>
+                    <path
+                      style="transition:stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1)"
+                      class="index-module--line--WO7RZ index-module--line2--8ufvz" d="M 20,50 H 80"></path>
+                    <path
+                      style="transition:stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1)"
+                      class="index-module--line--WO7RZ index-module--line3--PsLzv"
+                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                    </path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="logoBox">
+            <a class="navbar-brand" href="#" title="logo" aria-label="logo">
+              <img src="assets/images/uae_logo.svg" class="sm_ " alt="">
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="nav_box_wrapper" id="master_menu">
+        <div class="sideNavWrap ">
+          <div class="navWrap">
+            <ul class="navList">
+              <li class="navItem"><a href="certificateRequest.html"
+                  class="navLink more normalInverted_ v2 active"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 21.5" width="21" height="21">
+                    <g id="Icon" transform="translate(0 0.75)">
+                      <rect id="Area" fill="" opacity="0" />
+                      <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                        <path id="ddc55427-effd-4cb2-a6aa-0e5bcd710fd4"
+                          d="M13,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V9Z" transform="translate(-3.29 -4.498)"
+                          fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        <path id="bfb920a1-24c1-4be1-99ec-baefb9b8729c" d="M13,2V9h7" transform="translate(-3.29 -4.498)"
+                          fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Certificate Requests</span></a></li>
+              <li class="navItem"><a href="allRequests.html" class="navLink more normalInverted_ v2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20 21.5">
+                    <g id="Icon" transform="translate(0 0.75)">
+                      <rect id="Area" fill="" opacity="0" />
+                      <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                        <path id="_7ceca6d9-7818-4488-abd0-a89475ab127b" data-name="7ceca6d9-7818-4488-abd0-a89475ab127b"
+                          d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z" transform="translate(-3.29 -4.498)"
+                          fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        <path id="bca4acb2-e9e9-49bc-aed0-2a1bc03e3030" d="M14,2V8h6" transform="translate(-3.29 -4.498)"
+                          fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        <line id="ecc486f2-1c64-4ed3-ad04-1562b13ca1ad" x1="8" transform="translate(4.71 8.502)" fill="none"
+                          stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        <line id="_24204a68-e1e4-4814-bb16-8f6e8cc7e0f5" data-name="24204a68-e1e4-4814-bb16-8f6e8cc7e0f5"
+                          x1="8" transform="translate(4.71 12.502)" fill="none" stroke="" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                        <path id="_8e974fd9-3149-45bb-af89-e41dc7c0c648" data-name="8e974fd9-3149-45bb-af89-e41dc7c0c648"
+                          d="M10,9H8" transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>All Requests</span></a></li>
+              <li class="navItem"><a href="paymentHistory.html" class="navLink more normalInverted_ v2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 18 19.5">
+                    <g id="Icon" transform="translate(0.007 0.759)">
+                      <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                      <g id="Icon-2" data-name="Icon">
+                        <path id="f654c737-6619-4a49-b652-d4e6c2f40dcb"
+                          d="M14.4,3.6h1.8A1.8,1.8,0,0,1,18,5.4V18a1.8,1.8,0,0,1-1.8,1.8H5.4A1.8,1.8,0,0,1,3.6,18V5.4A1.8,1.8,0,0,1,5.4,3.6H7.2"
+                          transform="translate(-1.807 -1.809)" fill="none" stroke="" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                        <rect id="e1829885-6702-45c4-8cc2-57a1ec3b9d6a" width="7.2" height="3.6" rx="1"
+                          transform="translate(5.393 -0.009)" fill="none" stroke="" stroke-linecap="round"
+                          stroke-linejoin="round" stroke-width="1.5" />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Payment History</span></a></li>
+              <li class="navItem"><a href="userDashboard.html" class="navLink more normalInverted_ v2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 18 19.5">
+                    <g id="Icon" transform="translate(0.007 0.756)">
+                      <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                      <g id="Icon-2" data-name="Icon">
+                        <path id="_8e8318b5-2ffb-40ae-9954-0ce283ce8bb2" data-name="8e8318b5-2ffb-40ae-9954-0ce283ce8bb2"
+                          d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2" transform="translate(-3.007 -3.006)" fill="none"
+                          stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                        <circle id="_64c9f6a0-8133-4bdd-a532-cfd4a0b71a30" data-name="64c9f6a0-8133-4bdd-a532-cfd4a0b71a30"
+                          cx="4" cy="4" r="4" transform="translate(4.993 -0.006)" fill="none" stroke=""
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>User Profile</span></a></li>
+            </ul>
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="navbar_sec">
+        <nav class="navbar-inner">
+          <div class="loginBox">
+            <form class="form-v3">
+              <div class="input-field">
+                <select data-select>
+                  <option> Login</option>
+                  <option> Logout</option>
+                </select>
+              </div>
+            </form>
+    
+            <div class="iconBox user">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                <g id="Group_4826" data-name="Group 4826" transform="translate(-37 -136)">
+                  <circle id="Ellipse_138" data-name="Ellipse 138" cx="20" cy="20" r="20" transform="translate(37 136)"
+                    fill="#fff" />
+                  <g id="Icon" transform="translate(48.747 146.746)">
+                    <rect id="Area" width="16" height="16" transform="translate(0.253 0.253)" fill="#fcfcfc" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(0.916 0)">
+                      <path id="f77cc739-99ac-40a5-bbfa-4ec0f6a52345"
+                        d="M19.116,22.168V20.335a3.668,3.668,0,0,0-3.668-3.668H8.112a3.668,3.668,0,0,0-3.668,3.668v1.834"
+                        transform="translate(-4.444 -5.663)" fill="none" stroke="#1e3a56" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <circle id="b8957723-bda0-4f86-9075-b6dea2be85e0" cx="3.668" cy="3.668" r="3.668"
+                        transform="translate(3.668)" fill="none" stroke="#1e3a56" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+    
+            </div>
+          </div>
+    
+    
+    
+          <ul class="navbar-nav ">
+            <li class="nav-item no_hide">
+              <a href="noRequests_ar.html" class=" lang_ nav-link">
+                <span>العربية</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link  theme-changer" data-theme="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+                  <g id="Group_4825" data-name="Group 4825" transform="translate(-1698 -147)">
+                    <g id="Rectangle_332" data-name="Rectangle 332" transform="translate(1698 147)" fill="#d6d5d5"
+                      stroke="#fff" stroke-width="1">
+                      <rect width="19" height="19" stroke="none" />
+                      <rect x="0.5" y="0.5" width="18" height="18" fill="none" />
+                    </g>
+                    <rect id="Rectangle_333" data-name="Rectangle 333" width="9" height="17" transform="translate(1699 148)"
+                      fill="#1e3a56" />
+                  </g>
+                </svg>
+    
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header><div class="loader">
+	<div class="in_loader">
+		<div class="loader-block">
+			<div class="loader-img">
+				<img src="assets/images/logo.svg" alt="">
+			</div>
+		</div>
+	</div>
+</div><main class="certificateRequestPage page v2">
+  <section class="pageSection section gridSplit">
+    <div class="sideNavWrap finAnim d1">
+      <div class="navWrap">
+        <ul class="navList">
+          <li class="navItem"><a href="#/" class="navLink closeBtn more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.222 20">
+                  <g id="Icon" transform="translate(1.11)">
+                    <rect id="Area" width="20" height="20" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.499)">
+                      <line id="_12e1f04a-f4dd-4d65-b3c6-a786dfe57069" data-name="12e1f04a-f4dd-4d65-b3c6-a786dfe57069"
+                        x1="20" transform="translate(-1.289 5.279)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="_241af363-98f5-41c0-a69c-9f852b48c796" data-name="241af363-98f5-41c0-a69c-9f852b48c796"
+                        x1="20" transform="translate(-1.289 0.835)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.222" />
+                      <line id="d3a79788-1214-45e9-9a80-a8881cc5722f" x1="20" transform="translate(-1.289 9.724)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.222" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a></li>
+          <li class="navItem"><a href="certificateRequest.html"
+              class="navLink more normalInverted_ v2 active">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="ddc55427-effd-4cb2-a6aa-0e5bcd710fd4"
+                        d="M13,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V9Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bfb920a1-24c1-4be1-99ec-baefb9b8729c" d="M13,2V9h7" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>Certificate Requests</span>
+            </a></li>
+          <li class="navItem"><a href="allRequests.html" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.5" viewBox="0 0 20 21.5">
+                  <g id="Icon" transform="translate(0 0.75)">
+                    <rect id="Area" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon" transform="translate(1.29 2.498)">
+                      <path id="_7ceca6d9-7818-4488-abd0-a89475ab127b" data-name="7ceca6d9-7818-4488-abd0-a89475ab127b"
+                        d="M14,2H6A2,2,0,0,0,4,4V20a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V8Z"
+                        transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="bca4acb2-e9e9-49bc-aed0-2a1bc03e3030" d="M14,2V8h6" transform="translate(-3.29 -4.498)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="ecc486f2-1c64-4ed3-ad04-1562b13ca1ad" x1="8" transform="translate(4.71 8.502)"
+                        fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <line id="_24204a68-e1e4-4814-bb16-8f6e8cc7e0f5" data-name="24204a68-e1e4-4814-bb16-8f6e8cc7e0f5"
+                        x1="8" transform="translate(4.71 12.502)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <path id="_8e974fd9-3149-45bb-af89-e41dc7c0c648" data-name="8e974fd9-3149-45bb-af89-e41dc7c0c648"
+                        d="M10,9H8" transform="translate(-3.29 -4.498)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>All Requests</span>
+            </a></li>
+          <li class="navItem"><a href="paymentHistory.html" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.759)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="f654c737-6619-4a49-b652-d4e6c2f40dcb"
+                        d="M14.4,3.6h1.8A1.8,1.8,0,0,1,18,5.4V18a1.8,1.8,0,0,1-1.8,1.8H5.4A1.8,1.8,0,0,1,3.6,18V5.4A1.8,1.8,0,0,1,5.4,3.6H7.2"
+                        transform="translate(-1.807 -1.809)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                      <rect id="e1829885-6702-45c4-8cc2-57a1ec3b9d6a" width="7.2" height="3.6" rx="1"
+                        transform="translate(5.393 -0.009)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <span>Payment History</span>
+            </a></li>
+          <li class="navItem"><a href="userDashboard.html" class="navLink more normalInverted_ v2">
+              <div class="svgBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.5" viewBox="0 0 18 19.5">
+                  <g id="Icon" transform="translate(0.007 0.756)">
+                    <rect id="Area" width="18" height="18" transform="translate(-0.007 -0.007)" fill="" opacity="0" />
+                    <g id="Icon-2" data-name="Icon">
+                      <path id="_8e8318b5-2ffb-40ae-9954-0ce283ce8bb2" data-name="8e8318b5-2ffb-40ae-9954-0ce283ce8bb2"
+                        d="M20,21V19a4,4,0,0,0-4-4H8a4,4,0,0,0-4,4v2" transform="translate(-3.007 -3.006)" fill="none"
+                        stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                      <circle id="_64c9f6a0-8133-4bdd-a532-cfd4a0b71a30"
+                        data-name="64c9f6a0-8133-4bdd-a532-cfd4a0b71a30" cx="4" cy="4" r="4"
+                        transform="translate(4.993 -0.006)" fill="none" stroke="" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <span>User Profile</span>
+            </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+    <div class="mainContentWrap finAnim d2">
+
+      <div class="breadCrumb">
+        <ul class="crumbList">
+          <li class="crumbItem current">All Requests</li>
+        </ul>
+      </div>
+
+      <div class="noRequestWrap pageWrap v2">
+        <div class="contentBox finAnim d3">
+          <div class="textBox lg_">
+            <p>No Request Available</p>
+          </div>
+          <div class="moreWrap finAnim d3">
+            <a href="certificateRequest.html" class="more lg_">
+              <span>Request for new certificate</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<script>
+  let btn = document.querySelector(".closeBtn")
+  let section = document.querySelector(".section")
+
+  btn.addEventListener("click", changeSize)
+
+  function changeSize() {
+    section.classList.toggle("active")
+  }
+
+</script>
+
+<script src="assets/scripts/lib/modernizr.min.js" type='text/javascript'></script>
+<script src="assets/scripts/lib/jquery-3.4.1.min.js" type='text/javascript'></script>
+<script src="assets/scripts/lib/jquery-migrate-3.0.1.min.js" type='text/javascript'></script>
+<script src="assets/scripts/min/page_plugins.js" type='text/javascript'></script>
+<script src="assets/scripts/min/page.js" type='text/javascript'></script>
+
+<script>
+  $(function () {
+    $('[data-select]').selectric({ disableOnMobile: false, nativeOnMobile: false });
+  })
+
+  /* var formControl = {
+     fileUpload: function () {
+       var t = document.querySelectorAll('[data-p-fileupload');
+ 
+       if (t) {
+         t.forEach(function (e) {
+           var m = e.parentElement;
+           var s = m.querySelector('.uploadFileName');
+ 
+           e.onchange = function (el) {
+             s.innerText = el.target.value;
+           }
+         })
+       }
+     },
+ 
+     init: function () {
+       this.fileUpload();
+     }
+   }
+ 
+   formControl.init();
+ */
+
+
+  var loginSwiper = new Swiper(".loginSwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    spaceBetween: 20,
+  });
+
+  new dateDropper({
+    selector: '.datepick',
+    expandedOnly: true,
+    format: "dd-mm-y",
+    customClass: 'datePickStyle',
+    //overlay: true,
+    showArrowsOnHover: false,
+  });
+
+  new dateDropper({
+    selector: '.datepick-ar',
+    expandedOnly: true,
+    format: "dd-mm-y",
+    customClass: 'datePickStyle',
+    showArrowsOnHover: false,
+    lang: 'ar'
+  });
+
+  $('.tabList ul.tabs li span').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('.tabList ul.tabs li span').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  })
+
+  $("#example-basic").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "fade",
+    transitionEffectSpeed: 400,
+    autoFocus: true,
+    onInit: function (event, currentIndex) {
+      console.log($(this), currentIndex)
+      $('.actions ul li:nth-child(1)').after('<li aria-hidden="false" aria-disabled="false"><a href="#save" role="menuitem">Save as draft</a></li>');
+      $('.actions ul li:nth-child(2)').before('<li aria-hidden="false" aria-disabled="false"><a href="#cancel" role="menuitem">Cancel</a></li>');
+      $('.steps ul li:nth-child(1)').append('Applicant Information');
+      $('.steps ul li:nth-child(2)').append('Request Information');
+      $('.steps ul li:nth-child(3)').append('Delivery Information');
+      $('.steps ul li:nth-child(4)').append('Review');
+    }
+  });
+
+
+
+
+
+
+</script><footer>
+
+  <div class="container">
+    <div class="fLastWrap">
+
+      <div class="copyWrap">
+        <p>© 2023 Federal Tax Authority. All
+          rights reserved</p>
+      </div>
+
+      <div class="footerNav">
+        <ul>
+          <li>
+            <a href="Contact.html" class="link_">
+              <span>Contact us</span>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" class="link_">
+              <span>FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="Customer Happiness Charter.html" class="link_">
+              <span>Customer Happiness Charter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+  </div>
+</footer></body>
+
+</html>

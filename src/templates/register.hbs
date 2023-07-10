@@ -1,0 +1,82 @@
+{{> header}}
+{{> loader}}
+<main class="registerPage page">
+  <section class="pageSection">
+    <div class="container">
+      <div class="registerWrap pageWrap">
+        <div class="formWrap finAnim">
+          <div class="contentBox">
+            <div class="imgBox">
+              <img src="{{assets}}/images/redX.svg" class="" alt="">
+            </div>
+
+            <div class="textBox textCenter">
+              <p>Your email is not recognised in the TRC Portal</p>
+              <span>Are you registered with a different email address?</span>
+            </div>
+
+            <div class="moreWrap alCenter">
+              <a class="more lg_" data-fancybox href="#newEmail">
+                <span>Yes</span>
+              </a>
+
+              <button type="submit" class="more lg_ outline">
+                <span>No</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="svgBox finAnim d1">
+          <img src="{{assets}}/images/logoLg_icon.svg" class="" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div id="newEmail" class="popup popupBox sm_box" style="display: none;">
+  <div class="formBox">
+    <form class="form-v3">
+      <div class="input_box">
+        <div class="input-field full_">
+          <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+            data-valmsg-replace="true"><span id="loginModel_Username-error" class="">The Email Id field is
+              required.</span></span>
+          <label for="emailid">Enter your new email address</label>
+          <input id="emailid" type="email">
+        </div>
+
+        <div class="moreWrap">
+          <button type="submit" class="more lg_">
+            <span>Send OTP</span>
+          </button>
+
+          <button type="submit" class="more lg_ normalInverted_">
+            <span>Resend OTP</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="input_box">
+        <div class="input-field full_">
+          <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+            data-valmsg-replace="true"><span id="loginModel_Username-error" class="">The OTP field is
+              required.</span></span>
+          <label for="otp">Enter the OTP received in Email</label>
+          <input id="otp" type="text">
+        </div>
+
+        <div class="moreWrap">
+          <a href="{{ menuLink 'noRequests'}}" class="more lg_">
+            <span>Submit</span>
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{{> script-page}}
+{{> footer}}

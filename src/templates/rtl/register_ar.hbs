@@ -1,0 +1,81 @@
+{{> header}}
+{{> loader}}
+<main class="registerPage page">
+  <section class="pageSection">
+    <div class="container">
+      <div class="registerWrap pageWrap">
+        <div class="formWrap finAnim">
+          <div class="contentBox">
+            <div class="imgBox">
+              <img src="{{assets}}/images/redX.svg" class="" alt="">
+            </div>
+
+            <div class="textBox textCenter">
+              <p>لم يتم التعرف على بريدك الإلكتروني في بوابة TRC</p>
+              <span>هل أنت مسجل بعنوان بريد إلكتروني مختلف؟</span>
+            </div>
+
+            <div class="moreWrap alCenter">
+              <a class="more lg_" data-fancybox href="#newEmail">
+                <span>نعم</span>
+              </a>
+
+              <button type="submit" class="more lg_ outline">
+                <span>لا</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="svgBox finAnim d1">
+          <img src="{{assets}}/images/logoLg_icon.svg" class="" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<div id="newEmail" class="popup popupBox sm_box" style="display: none;">
+  <div class="formBox">
+    <form class="form-v3">
+      <div class="input_box">
+        <div class="input-field full_">
+          <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+            data-valmsg-replace="true"><span id="loginModel_Username-error" class="">مطلوب حقل معرف البريد
+              الإلكتروني.</span></span>
+          <label for="emailid">أدخل عنوان بريدك الإلكتروني الجديد</label>
+          <input id="emailid" type="email">
+        </div>
+
+        <div class="moreWrap">
+          <button type="submit" class="more lg_">
+            <span>أرسل OTP</span>
+          </button>
+
+          <button type="submit" class="more lg_ normalInverted_">
+            <span>إعادة إرسال OTP</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="input_box">
+        <div class="input-field full_">
+          <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
+            data-valmsg-replace="true"><span id="loginModel_Username-error" class="">مطلوب حقل OTP.</span></span>
+          <label for="otp">أدخل OTP المستلم في البريد الإلكتروني</label>
+          <input id="otp" type="text">
+        </div>
+
+        <div class="moreWrap">
+          <button type="submit" class="more lg_">
+            <span>يُقدِّم</span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{{> script-page}}
+{{> footer}}

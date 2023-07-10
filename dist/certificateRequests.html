@@ -440,263 +440,10 @@
 
 
       <div class="certificateRequestWrap pageWrap v2">
-        <div class="formBox">
-          <form class="form-v3">
-            <div class="input_box">
-              <div class="input-field">
-                <span class="form-text text-danger field-validation-error" data-valmsg-for="loginModel.Username"
-                  data-valmsg-replace="true"><span id="loginModel_Username-error" class="">The field is
-                    required.</span></span>
-                <label for="typeofC">Type of Certificate</label>
-                <input id="typeofC" type="text">
-              </div>
-
-              <div class="input-field">
-                <label for="typeofA">Type of the applicant</label>
-                <input id="typeofA" type="text">
-              </div>
-
-              <div class="input-field">
-                <label for="coc">Country which the Certificate is applied for</label>
-                <select id="coc" data-select>
-                  <option>India</option>
-                  <option>Spain</option>
-                  <option>Moscow</option>
-                </select>
-              </div>
-
-              <div class="input-field">
-                <label for="sDateFyear">Start Date of required Financial Year</label>
-                <div class="wIcon">
-                  <input id="sDateFyear" type="text" class="datepicker">
-                  <div class="iconBox">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15.233" height="16.213" viewBox="0 0 15.233 16.213">
-                      <g id="calendar" transform="translate(0.75 0.75)">
-                        <rect id="Rectangle_342" data-name="Rectangle 342" width="13.733" height="13.733" rx="2"
-                          transform="translate(0 0.981)" fill="none" stroke="#1e3a56" stroke-linecap="square"
-                          stroke-width="1.5" />
-                        <line id="Line_162" data-name="Line 162" y2="2.943" transform="translate(10.79 0)" fill="none"
-                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
-                        <line id="Line_163" data-name="Line 163" y2="2.943" transform="translate(3.924 0)" fill="none"
-                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
-                        <line id="Line_164" data-name="Line 164" x2="13.733" transform="translate(0 6.866)" fill="none"
-                          stroke="#1e3a56" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" />
-                      </g>
-                    </svg>
-
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="input-field full_">
-                <div class="inputWrap v2">
-                  <div class="input-field">
-                    <label for="cLang">Preferred language for the certificate</label>
-                  </div>
-
-                  <div class="input-field">
-                    <div class="radioWrap v2 ">
-                      <label>
-                        <input name="group1" type="radio" id="cLang">
-                        <span>Arabic</span>
-                      </label>
-                      <label>
-                        <input name="group1" type="radio">
-                        <span>English</span>
-                        <label class="error">Required field</label>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <div class="input-field">
-                <label for="name">Name of Applicant</label>
-                <input id="name" type="text" placeholder="Please write the name in English">
-              </div>
-
-
-              <div class="inputWrap">
-                <div class="input-field">
-                  <label for="eIdNum">Emirates ID Number</label>
-                  <input id="eIdNum" type="text">
-                </div>
-
-                <div class="input-field">
-                  <label for="eId">Please upload Emirates ID</label>
-                  <input id="eId" type="text">
-                </div>
-              </div>
-
-              <div class="input-field">
-
-                <label for="eIdNumEd">Emirates ID Expiry Date</label>
-
-                <div class="wIcon">
-                  <div class="placeholder_">
-                    <input id="eIdNumEd" type="file" data-p-fileupload>
-                    <span></span>
-                  </div>
-                  <div class="iconBox">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16.717" height="17.617" viewBox="0 0 16.717 17.617">
-                      <path id="paperclip"
-                        d="M17.27,8.977,10.052,16.2A4.716,4.716,0,1,1,3.383,9.527L10.6,2.309a3.144,3.144,0,1,1,4.446,4.446L7.821,13.973A1.572,1.572,0,1,1,5.6,11.75l6.669-6.661"
-                        transform="translate(-1.402 -0.561)" fill="none" stroke="#1e3a56" stroke-linecap="square"
-                        stroke-width="1.2" />
-                    </svg>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="input-field">
-                <label for="nationality">Nationality of the Applicant</label>
-                <input id="nationality" type="text">
-              </div>
-
-              <div class="inputWrap">
-                <div class="input-field">
-                  <label for="passportNum">Passport Number</label>
-                  <input id="passportNum" type="text">
-                </div>
-
-                <div class="input-field">
-                  <label for="passport">Please upload Passport Copy</label>
-                  <input id="passport" type="text">
-                </div>
-              </div>
-
-              <div class="input-field">
-                <label for="pNumEd">Passport Expiry Date</label>
-                <input id="pNumEd" type="text">
-              </div>
-
-              <div class="inputWrap">
-                <div class="input-field">
-                  <label for="residencyNum">Residency Number (File Number)*</label>
-                  <input id="residencyNum" type="text">
-                </div>
-
-                <div class="input-field">
-                  <label for="residency">Please upload Residency Copy</label>
-                  <input id="residency" type="text">
-                </div>
-              </div>
-
-
-              <div class="inputWrap">
-                <div class="input-field">
-                  <label for="sourceIncome">Source of Income</label>
-                  <input id="sourceIncome" type="text">
-                </div>
-
-                <div class="input-field">
-                  <label for="upload">Please upload</label>
-                  <input id="upload" type="text">
-                </div>
-              </div>
-
-
-              <div class="input-field">
-                <label for="bankStatement">Official Bank Statement</label>
-                <input id="bankStatement" type="text" placeholder="Upload atleast 6 months statement for required year">
-              </div>
-
-              <div class="input-field">
-                <label for="residencyReport">Immigration Report of Residency</label>
-                <input id="residencyReport" type="text"
-                  placeholder="Exit & Entry Report Covering for the Period Requested">
-              </div>
-
-              <div class="inputWrap">
-                <div class="input-field">
-                  <label for="supportingDocs">Supporting Document</label>
-                  <input id="supportingDocs" type="text">
-                </div>
-
-                <div class="input-field">
-                  <label for="upload-02">Please upload</label>
-                  <input id="upload-02" type="text">
-                </div>
-              </div>
-
-
-              <div class="input-field full_">
-                <div class="inputWrap v2">
-                  <div class="input-field">
-                    <label for="sFormat">Does the country you are applying for requires special format?</label>
-                  </div>
-
-                  <div class="input-field">
-                    <div class="radioWrap v2 ">
-                      <label>
-                        <input name="group2" type="radio" id="sFormat">
-                        <span>Yes</span>
-                      </label>
-                      <label>
-                        <input name="group2" type="radio">
-                        <span>No</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="input-field">
-                <label for="otherAttachments">Other Attachment</label>
-                <input id="otherAttachments" type="text">
-              </div>
-
-              <div class="input-field full_">
-                <div class="inputWrap v2">
-                  <div class="input-field">
-                    <label for="pCert">Do you want a printed certificate?</label>
-                  </div>
-
-                  <div class="input-field">
-                    <div class="radioWrap v2 ">
-                      <label>
-                        <input name="group3" type="radio" id="pCert">
-                        <span>Yes</span>
-                      </label>
-                      <label>
-                        <input name="group3" type="radio">
-                        <span>No</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="input-field">
-                <label for="otherComments">Other Comments</label>
-                <textarea id="otherComments" class="materialize-textarea"></textarea>
-              </div>
-
-              <div class="input-field full_">
-                <div class="radioWrap">
-                  <label>
-                    <input name="group4" type="checkbox" />
-                    <span>I agree to the Terms & Conditions of the FTA</span>
-                    <label class="error">Required field</label>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="moreWrap finAnim d3">
-          <button type="submit" class="more lg_ outline">
-            <span>Cancel</span>
-          </button>
-
-          <button type="submit" class="more lg_">
-            <span>Submit</span>
-          </button>
+        <div class="contentBox finAnim">
+          <h1 class=" ">
+            <small>Certificate Requests</small>
+          </h1>
         </div>
       </div>
     </div>
@@ -758,8 +505,6 @@
       el: ".swiper-pagination",
     },
     spaceBetween: 20,
-
-
   });
 
   new dateDropper({
@@ -779,6 +524,38 @@
     showArrowsOnHover: false,
     lang: 'ar'
   });
+
+  $('.tabList ul.tabs li span').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('.tabList ul.tabs li span').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  })
+
+  $("#example-basic").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "fade",
+    transitionEffectSpeed: 400,
+    autoFocus: true,
+    onInit: function (event, currentIndex) {
+      console.log($(this), currentIndex)
+      $('.actions ul li:nth-child(1)').after('<li aria-hidden="false" aria-disabled="false"><a href="#save" role="menuitem">Save as draft</a></li>');
+      $('.actions ul li:nth-child(2)').before('<li aria-hidden="false" aria-disabled="false"><a href="#cancel" role="menuitem">Cancel</a></li>');
+      $('.steps ul li:nth-child(1)').append('Applicant Information');
+      $('.steps ul li:nth-child(2)').append('Request Information');
+      $('.steps ul li:nth-child(3)').append('Delivery Information');
+      $('.steps ul li:nth-child(4)').append('Review');
+    }
+  });
+
+
+
+
+
 
 </script><footer>
 
